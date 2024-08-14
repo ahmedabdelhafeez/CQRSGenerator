@@ -1,0 +1,3 @@
+﻿namespace {namespace};
+
+public sealed record {name}(int Id, string Name);

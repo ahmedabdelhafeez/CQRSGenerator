@@ -1,0 +1,4 @@
+﻿using MediatR;
+namespace {namespace};
+
+public sealed record {name}(string Name) :IRequest<{name}Response>;

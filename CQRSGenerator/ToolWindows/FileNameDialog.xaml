@@ -1,0 +1,44 @@
+﻿<platform:DialogWindow  x:Class="CQRSGenerator.FileNameDialog"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:platform="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0"
+                        xmlns:toolkit="clr-namespace:Community.VisualStudio.Toolkit;assembly=Community.VisualStudio.Toolkit"
+                        toolkit:Themes.UseVsTheme="True"
+                        ResizeMode="NoResize"
+                        ShowInTaskbar="False"
+                        WindowStartupLocation="CenterScreen"
+                        SizeToContent="Width"
+                        mc:Ignorable="d"
+                        Width="400"
+                        Height="150"
+                        d:DesignHeight="600"
+                        d:DesignWidth="400">
+    <Grid Margin="5,20">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition  />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Name="lblFolder" Content=" name:" HorizontalAlignment="Left" Margin="5 0 0 0" VerticalAlignment="Center" Height="26" FontWeight="SemiBold" />
+        <TextBox Grid.Row="0" Grid.Column="1" Name="txtName" VerticalContentAlignment="Center"  TextWrapping="Wrap" Height="24" VerticalAlignment="Center" Padding="0" HorizontalAlignment="Stretch" MinWidth="210" />
+        <Button Grid.Row="0" Grid.Column="2" Content="Generate" HorizontalAlignment="Center" Margin="10,0" VerticalAlignment="Center" Width="75" Height="23" IsDefault="True" Name="btnCreate" Click="Button_Click" />
+
+
+        <StackPanel Grid.Row="1" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20">
+            <RadioButton Name="IsCQRS" Content="CQRS"  Click="CreateTypeClickEvent"  Margin="0,0,20,0" IsChecked="True"/>
+            <RadioButton Name="IsCommand" Content="Command" Click="CreateTypeClickEvent" Margin="0,0,20,0"/>
+            <RadioButton Name="IsQuery" Content="Query" Click="CreateTypeClickEvent" />
+        </StackPanel>
+
+    </Grid>
+</platform:DialogWindow>

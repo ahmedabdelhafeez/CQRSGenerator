@@ -1,0 +1,11 @@
+﻿using AutoMapper;
+
+namespace {namespace};
+
+public class {name} : Profile
+{
+    public {name}()
+    {
+        // CreateMap<Entity,Response>();
+    }
+}

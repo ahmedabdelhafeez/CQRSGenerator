@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="CQRSGenerator">
+	  <Buttons>
+		  <Button guid="GenerateCQRS" id="cmdidMyCommand" priority="0x0100" type="Button">
+			  <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_ADD_ITEMS"/>
+			  <CommandFlag>DynamicVisibility</CommandFlag>
+			  <Strings>
+				  <CommandName>GenerateCQRS</CommandName>
+				  <ButtonText>Generate CQRS ...</ButtonText>
+			  </Strings>
+		  </Button>
+	  </Buttons>
+  </Commands>
+	<CommandPlacements>
+		<CommandPlacement guid="GenerateCQRS" id="cmdidMyCommand" priority="0x0100">
+			<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_ADD_ITEM"/>
+		</CommandPlacement>
+
+		<CommandPlacement guid="GenerateCQRS" id="cmdidMyCommand" priority="0x0100">
+			<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SLNFLDR_ADD_ITEM"/>
+		</CommandPlacement>
+	</CommandPlacements>
+
+	<KeyBindings>
+		<KeyBinding guid="GenerateCQRS" id="cmdidMyCommand" mod1="Shift" key1="VK_F2" editor="guidVSStd97"/>
+	</KeyBindings>
+  <Symbols>
+    <GuidSymbol name="CQRSGenerator" value="{ed20d321-d9de-4e0a-a3c6-853e1ad4afae}">
+      
+    </GuidSymbol>
+	  <!-- This is the guid used to group the menu commands together -->
+	  <GuidSymbol name="GenerateCQRS" value="{5d971c00-25b1-4e09-9548-e0ecc85511bb}">
+		  <IDSymbol name="cmdidMyCommand" value="0x0100" />
+	  </GuidSymbol>
+  </Symbols>
+</CommandTable>
