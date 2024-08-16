@@ -12,7 +12,18 @@ The **CQRS Files Generator** is a powerful Visual Studio extension designed to s
 
 ## Installation
 
-To install the extension, download the `.vsix` file from the [Releases](https://github.com/ahmedabdelhafeez/CQRSFileGenerator/releases) page or directly from the Visual Studio Marketplace.
+You can install the **CQRS Files Generator** extension directly from the Visual Studio Marketplace. 
+
+[![Install from Visual Studio Marketplace](https://img.shields.io/badge/Install%20from-Marketplace-blue.svg)](https://marketplace.visualstudio.com/items?itemName=AhmedAbdelHafeez.CQRSFilesGenerator&ssr=false#overview)
+
+### Steps to Install:
+
+1. Visit the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=AhmedAbdelHafeez.CQRSFilesGenerator&ssr=false#overview).
+2. Click on the **"Download"** button.
+3. Follow the instructions to install the extension into your Visual Studio environment.
+4. Restart Visual Studio to complete the installation.
+
+Once installed, the extension will be available in the Solution Explorer context menu, allowing you to generate CQRS files quickly and efficiently.
 
 ## Usage
 
