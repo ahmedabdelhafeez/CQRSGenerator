@@ -25,7 +25,7 @@
 	</CommandPlacements>
 
 	<KeyBindings>
-		<KeyBinding guid="GenerateCQRS" id="cmdidMyCommand" mod1="Shift" mod2="Control" key1="G"  editor="guidVSStd97"/>
+		<KeyBinding guid="GenerateCQRS" id="cmdidMyCommand" mod1="Alt" key1="G" editor="guidVSStd97"/>
 	</KeyBindings>
   <Symbols>
     <GuidSymbol name="CQRSGenerator" value="{ed20d321-d9de-4e0a-a3c6-853e1ad4afae}">
