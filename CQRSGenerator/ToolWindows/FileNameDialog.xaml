@@ -12,33 +12,32 @@
                         SizeToContent="Width"
                         mc:Ignorable="d"
                         Width="400"
-                        Height="150"
+                        Height="170"
                         d:DesignHeight="600"
                         d:DesignWidth="400">
     <Grid Margin="5,20">
-        
+
         <Grid.RowDefinitions>
             <RowDefinition  Height="auto" />
+            <RowDefinition Height="auto" />
             <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto" />
-            <ColumnDefinition  />
+            <ColumnDefinition />
             <ColumnDefinition Width="auto" />
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" Grid.Column="0" Name="lblFolder" Content=" name:" HorizontalAlignment="Left" Margin="5 0 0 0" VerticalAlignment="Center" Height="26" FontWeight="SemiBold" />
         <TextBox Grid.Row="0" Grid.Column="1" Name="txtName" VerticalContentAlignment="Center"  TextWrapping="Wrap" Height="24" VerticalAlignment="Center" Padding="0" HorizontalAlignment="Stretch" MinWidth="210" />
         <Button Grid.Row="0" Grid.Column="2" Content="Generate" HorizontalAlignment="Center" Margin="10,0" VerticalAlignment="Center" Width="75" Height="23" IsDefault="True" Name="btnCreate" Click="Button_Click" />
-
-
-        <StackPanel Grid.Row="1" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20">
-            <RadioButton Name="IsCQRS" Content="CQRS"  Click="CreateTypeClickEvent"  Margin="0,0,20,0" IsChecked="True"/>
-            <RadioButton Name="IsCommand" Content="Command" Click="CreateTypeClickEvent" Margin="0,0,20,0"/>
+        <Label Name="errorMessage" Grid.Row="1"  Foreground="#FA4032" Grid.Column="1" FontSize="11"></Label>
+        <StackPanel Grid.Row="2" Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20">
+            <RadioButton Name="IsCQRS" Content="CQRS"  Click="CreateTypeClickEvent"  Margin="0,0,20,0" IsChecked="True" />
+            <RadioButton Name="IsCommand" Content="Command" Click="CreateTypeClickEvent" Margin="0,0,20,0" />
             <RadioButton Name="IsQuery" Content="Query" Click="CreateTypeClickEvent" />
         </StackPanel>
-
     </Grid>
 </platform:DialogWindow>
